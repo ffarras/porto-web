@@ -4,42 +4,79 @@
     <title>Faishal Farras</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style/index-new.css" rel="stylesheet">
+    <link href="./style/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
-<body class="font-sans">
-    <header class="flex flex-row justify-between px-20 py-4 align-center">
-        <h1 class="text-2xl font-semibold">Faishal Farras</h1>
-        <nav>
+<body class="font-sans bg-gray-50">
+    <header class="flex flex-col gap-2 lg:flex-row lg:justify-between md:px-24 lg:px-36 xl:px-48 2xl:px-56 py-8 align-center">
+        <div class="flex flex-row gap-4 items-center justify-center">
+            <h1 class="text-2xl font-semibold">Faishal Farras</h1>
+            <h2 class="text-md text-slate-800">UI/UX Engineer</h2>
+        </div>
+        <nav class="flex align-center justify-center">
             <ul class="flex flex-row gap-8 align-center">
-                <li>
-                    <a href="#visi">Works</a>
+                <li class="flex align-center">
+                    <a class="align-center flex justify-center items-center" href="#visi">Works</a>
                 </li>
-                <li>
-                    <a href="/static/about.html">About Me</a>
+                <li class="flex align-center">
+                    <a class="align-center flex justify-center items-center" href="/static/about.html">About Me</a>
                 </li>
-                <li>
-                    <a href="#sejarah">Contact</a>
+                <li class="flex align-center">
+                    <a class="align-center flex justify-center items-center" href="#sejarah">Contact</a>
                 </li>
-                <li>
-                    <a href="#galeri">Movie Reviews</a>
+                <li class="flex align-center">
+                    <a class="align-center flex justify-center items-center" href="#galeri">Movie Reviews</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="p-20">
-        <h1 class="text-4xl pb-8">From scratch to code, and everything in between.</h1>
-        <section class="grid grid-cols-2 gap-16">
-            <div class="h-500 bg-slate-600">test</div>
-            <div class="h-500 bg-slate-600">test</div>
+    <main class="py-20 xs:px-8 px-16 md:px-24 lg:px-36 xl:px-48 2xl:px-56 ">
+        <h1 class="text-5xl font-semibold lg:py-4 pb-6 text-slate-950 text-balance">From ideas to code, and everything in between.</h1>
+        <h3 class="text-xl lg:w-5/6 pb-20 text-slate-800 lg:text-pretty">Faishal is a designer and engineer based in Jakarta, currently
+            crafting IoT monitoring systems at BeomhoTS.
+            Passionate in finding the perfect design fit within technical boundaries.</h3>
+        <section class="grid lg:grid-cols-2 gap-10">
+            <a href="https://www.behance.net/gallery/179713663/Flux-Energy-Energy-Management-App" target="_blank">
+                <div class="flex flex-col">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/4eef5e179713663.Y3JvcCwxMjEyLDk0OCwwLDA.png"
+                        alt="Flux Energy Thumbnail" class="rounded-3xl">
+                    <span class="text-2xl text-slate-950 font-medium py-4 pb-1.5">Insightful energy control and management</span>
+                    <span class="text-lg font-medium">Flux Energy</span>
+                    <span class="text-slate-600">UI Design</span>
+                </div>
+            </a>
+            <a href="https://www.behance.net/gallery/176841373/UIUX-Design-Showcase-at-BeomhoTS" target="_blank">
+                <div class="flex flex-col"><img src="./resources/beomho-thumb.webp" alt="BeomhoTS Thumbnail"
+                        class="rounded-3xl"><span class="text-2xl text-slate-950 font-medium py-4 pb-1.5">Real-time environment
+                        monitoring system</span>
+                    <span class="text-lg font-medium">Works at BeomhoTS</span>
+                <span class="text-slate-600">UI/UX Design and Engineering</span></div>
+            </a>
+            <a href="https://www.behance.net/gallery/176842603/Mamikos-Mobile-App-Revamp-(UX-Case-Study)"
+                target="_blank">
+                <div class="flex flex-col"><img src="./resources/mamikos-thumb.webp" alt="Mamikos Thumbnail"
+                        class="rounded-3xl">
+                    <span class="text-2xl text-slate-950 font-medium py-4 pb-1.5">Improve finding kost experience</span>
+                    <span class="text-lg font-medium">Mamikos App</span>
+                    <span class="text-slate-600">UI/UX Design</span>
+                </div>
+            </a>
+            <a href="https://www.behance.net/gallery/176843099/Waste4Change-Website-Redesign-(UX-Case-Study)"
+                target="_blank">
+                <div class="flex flex-col"><img src="./resources/w4c-thumb.webp" alt="Waste4Change Thumbnail"
+                        class="rounded-3xl"><span class="text-2xl text-slate-950 font-medium py-4 pb-1.5">Encourage user interest
+                        in waste recycling</span>
+                    <span class="text-lg font-medium">Waste4Change Website</span>
+                <span class="text-slate-600">UX Research</span></div>
+            </a>
         </section>
     </main>
 
     <footer class="flex justify-center py-8">
         <nav>
-            <ul class="flex flex-row gap-16">
+            <ul class="flex flex-row gap-1 md:gap-2">
                 <li class="hover:bg-slate-50 px-4 py-1 rounded">
                     <a href="mailto:ffarras00@gmail.com">Email</a>
                 </li>
