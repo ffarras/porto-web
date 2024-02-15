@@ -9,24 +9,28 @@
 </head>
 
 <body class="font-sans bg-gray-50">
-    <header class="flex flex-col gap-2 lg:flex-row lg:justify-between md:px-24 lg:px-36 xl:px-48 2xl:px-56 py-8 align-center">
-        <div class="flex flex-row gap-4 items-center justify-center">
+    <header class="flex flex-col gap-1 lg:flex-row justify-between p-4 sm:py-8 md:px-24 lg:px-36 xl:px-48 2xl:px-56 align-center flex-wrap">
+        <div class="flex gap-4 items-center justify-center">
             <h1 class="text-2xl font-semibold">Faishal Farras</h1>
             <h2 class="text-md text-slate-800">UI/UX Engineer</h2>
         </div>
-        <nav class="flex align-center justify-center">
-            <ul class="flex flex-row gap-8 align-center">
-                <li class="flex align-center">
-                    <a class="align-center flex justify-center items-center" href="#visi">Works</a>
+        <!-- <input id="menu" type="checkbox" class="hidden">
+        <label for="menu" tabindex="0" class="sm:hidden flex">
+            <img src="./resources/hamburger-menu.svg" alt="">
+        </label> -->
+        <nav class="flex align-center justify-center w-full lg:w-fit">
+            <ul class="flex flex-row gap-1 sm:gap-6 xl:gap-8 items-end sm:items-center">
+                <li class="flex p-2">
+                    <a class="align-center flex justify-center" href="#visi">Works</a>
                 </li>
-                <li class="flex align-center">
-                    <a class="align-center flex justify-center items-center" href="/static/about.html">About Me</a>
+                <li class="flex p-2">
+                    <a class="align-center flex justify-center" href="/static/about.html">About</a>
                 </li>
-                <li class="flex align-center">
-                    <a class="align-center flex justify-center items-center" href="#sejarah">Contact</a>
+                <li class="flex p-2">
+                    <a class="align-center flex justify-center" href="#galeri">Movie Reviews</a>
                 </li>
-                <li class="flex align-center">
-                    <a class="align-center flex justify-center items-center" href="#galeri">Movie Reviews</a>
+                <li class="flex p-2">
+                    <a class="align-center flex justify-center" href="#galeri">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -37,6 +41,7 @@
         <h3 class="text-xl lg:w-5/6 pb-20 text-slate-800 lg:text-pretty">Faishal is a designer and engineer based in Jakarta, currently
             crafting IoT monitoring systems at BeomhoTS.
             Passionate in finding the perfect design fit within technical boundaries.</h3>
+        <h4 class="text-xl font-semibold py-4 text-center">Selected Works</h4>
         <section class="grid lg:grid-cols-2 gap-10">
             <a href="https://www.behance.net/gallery/179713663/Flux-Energy-Energy-Management-App" target="_blank">
                 <div class="flex flex-col">
@@ -74,9 +79,9 @@
         </section>
     </main>
 
-    <footer class="flex justify-center py-8">
+    <footer class="flex justify-center py-8 xs:py-4">
         <nav>
-            <ul class="flex flex-row gap-1 md:gap-2">
+            <ul class="flex flex-row xs:gap-0.5 gap-1 md:gap-2">
                 <li class="hover:bg-slate-50 px-4 py-1 rounded">
                     <a href="mailto:ffarras00@gmail.com">Email</a>
                 </li>
