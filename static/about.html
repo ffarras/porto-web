@@ -3,6 +3,7 @@
 <head>
     <title>About - Faishal Farras</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="../resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -10,30 +11,35 @@
 
 <body class="font-sans bg-gray-50">
     <header
-        class="flex flex-col gap-1 lg:flex-row justify-between p-4 sm:py-8 md:px-24 lg:px-36 xl:px-48 2xl:px-56 align-center flex-wrap">
+        class="flex flex-col gap-3 lg:flex-row justify-between p-4 sm:py-8 md:px-24 lg:px-36 xl:px-48 2xl:px-56 align-center flex-wrap">
         <a href="/">
             <div class="flex gap-4 items-center justify-center">
                 <h1 class="text-2xl font-semibold">Faishal Farras</h1>
                 <h2 class="text-md text-slate-600">UI/UX Engineer</h2>
             </div>
         </a>
-        <nav class="flex align-center justify-center w-full lg:w-fit">
+        <nav class="flex align-center justify-center w-full lg:w-fit text-slate-600">
             <ul class="flex flex-row gap-1 sm:gap-5 xl:gap-7 items-end sm:items-center font-medium">
                 <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="./works.html">Works</a>
                 </li>
                 <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 bg-slate-200 rounded align-center flex justify-center"
                         href="">About</a>
                 </li>
-                <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                <li class="hidden sm:flex">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="https://letterboxd.com/mfaishalf/tag/review-faishal/reviews/" target="_blank">Movie
                         Reviews</a>
                 </li>
+                <li class="sm:hidden">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
+                        href="https://letterboxd.com/mfaishalf/tag/review-faishal/reviews/" target="_blank">
+                        Reviews</a>
+                </li>
                 <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="https://drive.google.com/file/d/1XcnTCA6kkH4PFbpsp0Bd8HY_GbW2Jqfm/view?usp=sharing"
                         target="_blank">Resume</a>
                 </li>
@@ -41,55 +47,58 @@
         </nav>
     </header>
 
-    <main class="py-20 xs:px-8 px-16 md:px-24 lg:px-36 xl:px-48 2xl:px-56 ">
-        <h1 class="text-5xl font-semibold lg:py-4 pb-6 text-slate-900 text-balance lg:leading-tight">A computer
+    <main class="py-20 pt-16 xs:px-8 px-16 md:px-24 md:pt-6 lg:px-36 xl:px-48 2xl:px-56">
+        <h1 class="text-5xl font-semibold lg:py-4 pb-12 text-slate-900 text-balance lg:leading-tight">A computer
             science graduate. <br> Why UI/UX design?
         </h1>
-        <h4 class="text-3xl font-semibold py-8">Selected Works</h4>
-        <section class="grid lg:grid-cols-2 gap-10">
-            <a href="https://www.behance.net/gallery/179713663/Flux-Energy-Energy-Management-App" target="_blank">
-                <div class="flex flex-col">
-                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/4eef5e179713663.Y3JvcCwxMjEyLDk0OCwwLDA.png"
-                        alt="Flux Energy Thumbnail" class="rounded-3xl">
-                    <span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Insightful energy control and
-                        management</span>
-                    <span class="text-lg font-medium">Flux Energy</span>
-                    <span class="text-slate-700">UI Design</span>
-                </div>
-            </a>
-            <a href="https://www.behance.net/gallery/176841373/UIUX-Design-Showcase-at-BeomhoTS" target="_blank">
-                <div class="flex flex-col"><img src="./resources/beomho-thumb.webp" alt="BeomhoTS Thumbnail"
-                        class="rounded-3xl"><span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Real-time
-                        environment
-                        monitoring system</span>
-                    <span class="text-lg font-medium">Works at BeomhoTS</span>
-                    <span class="text-slate-700">UI/UX Design and Engineering</span>
-                </div>
-            </a>
-            <a href="https://www.behance.net/gallery/176842603/Mamikos-Mobile-App-Revamp-(UX-Case-Study)"
-                target="_blank">
-                <div class="flex flex-col"><img src="./resources/mamikos-thumb.webp" alt="Mamikos Thumbnail"
-                        class="rounded-3xl">
-                    <span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Improve finding kost experience</span>
-                    <span class="text-lg font-medium">Mamikos App</span>
-                    <span class="text-slate-700">UI/UX Design</span>
-                </div>
-            </a>
-            <a href="https://www.behance.net/gallery/176843099/Waste4Change-Website-Redesign-(UX-Case-Study)"
-                target="_blank">
-                <div class="flex flex-col"><img src="./resources/w4c-thumb.webp" alt="Waste4Change Thumbnail"
-                        class="rounded-3xl"><span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Encourage user
-                        interest
-                        in waste recycling</span>
-                    <span class="text-lg font-medium">Waste4Change Website</span>
-                    <span class="text-slate-700">UX Research</span>
-                </div>
-            </a>
+        <section class="flex flex-col gap-8 py-8 w-full lg:w-2/3">
+            <img src="../resources/1672193209311.jpg" alt=""
+                class="w-2/3 h-2/3 md:w-1/2 md:h-1/2 xl:w-1/4 xl:h-1/4 rounded-xl">
+            <div class="flex flex-col gap-6 md:gap-4 text-slate-700">
+                <p> Age 11 is my first fascination towards technology and building something, when I built a simple
+                    Folkative-like <a href="https://biarlebihpintar.blogspot.com/" class="hover:text-slate-900 font-medium underline underline-offset-4">online media website</a> using Blogger. This fascination fueled my journey to becoming a
+                    Computer
+                    Science student, where I discovered my new interest towards crafting design. It was during a
+                    Human-Computer
+                    Interaction course that I realized how my interest in crafting design could intersect with
+                    technology, thus
+                    settling myself to delve deeper into the realm of UI/UX design.</p>
+                <p> Now, I have involved in multiple projects working as both a designer and engineer, ranging from
+                    mobile apps
+                    to
+                    web dashboards. I cherish the opportunities to create delightful experiences that impact lots of
+                    people.
+                    Being
+                    a designer with an engineering background helps to understand problems more thoroughly, and also
+                    prevents me
+                    from heated feuds with developers over why the cards section has different paddings.</p>
+                <p> In my free time, I watch western movies and TV series and write reviews about them. Some of my
+                    proudest and
+                    longest reviews are about <a
+                        href="https://link.medium.com/ClWpnD74pHb" class="hover:text-slate-900 font-medium underline underline-offset-4">Succession</a>,
+                    <a href="https://link.medium.com/7QVxrDm5pHb " class="hover:text-slate-900 font-medium underline underline-offset-4">Yuni</a>, and <a href="https://link.medium.com/jQeddsr5pHb " class="hover:text-slate-900 font-medium underline underline-offset-4">Seperti Dendam, Rindu Harus Dibayar Tuntas</a>. You can read the
+                    rest on my <a href="https://letterboxd.com/mfaishalf" class="hover:text-slate-900 font-medium underline underline-offset-4">Letterboxd</a> (and connect with me if you have one!)</p>
+            </div>
         </section>
     </main>
 
-    <footer class="flex justify-center py-8 xs:py-4">
-        <span class="text-slate-600">v 0.1. made with tailwind in 2024.</span>
+    <footer class="flex flex-col items-center px-4 py-8 xs:py-4 bg-slate-100 mt-8 gap-4">
+        <ul class="flex flex-row xs:gap-0.5 gap-1 md:gap-2 text-slate-600">
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline" href="mailto:ffarras00@gmail.com">Email</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline"
+                    href="https://linkedin.com/in/mfaishalf">Linkedin</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline" href="https://behance.net/mfaishalf">Behance</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline" href="https://github.com/ffarras">Github</a>
+            </li>
+        </ul>
+        <span class="text-slate-400 text-center text-pretty">version one. made with love (and tailwind) in 2024.</span>
     </footer>
 </body>
 

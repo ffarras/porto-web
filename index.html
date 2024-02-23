@@ -3,6 +3,7 @@
 <head>
     <title>Faishal Farras</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="./resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -10,7 +11,7 @@
 
 <body class="font-sans bg-gray-50">
     <header
-        class="flex flex-col gap-1 lg:flex-row justify-between p-4 sm:py-8 md:px-24 lg:px-36 xl:px-48 2xl:px-56 align-center flex-wrap">
+        class="flex flex-col gap-3 lg:flex-row justify-between p-4 sm:py-8 md:px-24 lg:px-36 xl:px-48 2xl:px-56 align-center flex-wrap">
         <a href="/">
             <div class="flex gap-4 items-center justify-center">
                 <h1 class="text-2xl font-semibold">Faishal Farras</h1>
@@ -22,22 +23,27 @@
             <img src="./resources/hamburger-menu.svg" alt="">
         </label> -->
         <nav class="flex align-center justify-center w-full lg:w-fit">
-            <ul class="flex flex-row gap-1 sm:gap-5 xl:gap-7 items-end sm:items-center font-medium">
+            <ul class="flex flex-row gap-1 sm:gap-5 xl:gap-7 items-end sm:items-center font-medium text-slate-600">
                 <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="./static/works.html">Works</a>
                 </li>
                 <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="./static/about.html">About</a>
                 </li>
-                <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                <li class="hidden sm:flex">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="https://letterboxd.com/mfaishalf/tag/review-faishal/reviews/" target="_blank">Movie
                         Reviews</a>
                 </li>
+                <li class="sm:hidden">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
+                        href="https://letterboxd.com/mfaishalf/tag/review-faishal/reviews/" target="_blank">
+                        Reviews</a>
+                </li>
                 <li class="">
-                    <a class="flex px-2.5 py-1.5 hover:bg-slate-200 rounded align-center flex justify-center"
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
                         href="https://drive.google.com/file/d/1XcnTCA6kkH4PFbpsp0Bd8HY_GbW2Jqfm/view?usp=sharing"
                         target="_blank">Resume</a>
                 </li>
@@ -52,36 +58,64 @@
             Jakarta, currently
             crafting IoT monitoring systems at BeomhoTS.
             Passionate in finding the perfect design fit within technical boundaries.</h3>
-        <ul class="flex flex-row xs:gap-0.5 gap-1 md:gap-2 pb-20">
-            <li>
-                <a class="hover:bg-slate-200 px-2.5 py-1.5 rounded" href="mailto:ffarras00@gmail.com">Email</a>
+        <ul class="flex flex-row gap-6 pb-20">
+            <li class="flex group">
+                <a class="p-1" href="mailto:ffarras00@gmail.com">
+                    <svg width="32" height="32" viewBox="0 0 24 24" class="fill-slate-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path class="fill-slate-500 group-hover:fill-slate-900"
+                            d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </li>
-            <li>
-                <a class="hover:bg-slate-200 px-2.5 py-1.5 rounded"
-                    href="https://linkedin.com/in/mfaishalf">Linkedin</a>
+            <li class="flex group">
+                <a class="p-1" href="https://linkedin.com/in/mfaishalf">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-slate-500 group-hover:fill-slate-900"
+                            d="M18.336 18.339H15.671V14.162C15.671 13.166 15.651 11.884 14.281 11.884C12.892 11.884 12.68 12.968 12.68 14.089V18.339H10.014V9.75H12.574V10.92H12.609C12.967 10.246 13.837 9.533 15.137 9.533C17.837 9.533 18.337 11.311 18.337 13.625L18.336 18.339ZM7.004 8.575C6.80056 8.57526 6.59906 8.53537 6.41106 8.45761C6.22307 8.37984 6.05227 8.26574 5.90846 8.12184C5.76465 7.97793 5.65065 7.80706 5.57301 7.61901C5.49537 7.43097 5.4556 7.22944 5.456 7.026C5.4562 6.71983 5.54718 6.4206 5.71744 6.16615C5.8877 5.91169 6.12959 5.71343 6.41253 5.59645C6.69547 5.47947 7.00674 5.44902 7.30698 5.50894C7.60722 5.56886 7.88296 5.71648 8.09931 5.93311C8.31566 6.14974 8.46291 6.42566 8.52245 6.72598C8.58199 7.0263 8.55113 7.33753 8.43378 7.62032C8.31644 7.9031 8.11787 8.14474 7.86319 8.31467C7.60851 8.4846 7.30917 8.5752 7.003 8.575M8.339 18.339H5.667V9.75H8.34L8.339 18.339ZM19.67 3H4.33C3.594 3 3 3.58 3 4.297V19.703C3 20.42 3.594 21 4.328 21H19.667C20.4 21 21 20.42 21 19.703V4.297C21 3.581 20.4 3 19.666 3H19.67Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </li>
-            <li>
-                <a class="hover:bg-slate-200 px-2.5 py-1.5 rounded" href="https://behance.net/mfaishalf">Behance</a>
+            <li class="flex group">
+                <a class="p-1" href="https://behance.net/mfaishalf">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-slate-500 group-hover:fill-slate-900"
+                            d="M7.443 5.34998C8.082 5.34998 8.673 5.39998 9.213 5.54798C9.754 5.64698 10.197 5.84498 10.59 6.09198C10.984 6.33898 11.279 6.68598 11.475 7.13098C11.672 7.57598 11.771 8.12098 11.771 8.71398C11.771 9.40698 11.623 9.99998 11.279 10.445C10.984 10.891 10.492 11.286 9.902 11.583C10.738 11.831 11.377 12.276 11.771 12.869C12.164 13.463 12.41 14.205 12.41 15.046C12.41 15.739 12.262 16.332 12.016 16.827C11.771 17.322 11.377 17.767 10.934 18.064C10.4528 18.3823 9.92084 18.6164 9.361 18.756C8.771 18.905 8.181 19.004 7.591 19.004H1V5.34998H7.443ZM7.049 10.89C7.59 10.89 8.033 10.742 8.377 10.495C8.721 10.248 8.869 9.80198 8.869 9.25798C8.869 8.96098 8.819 8.66398 8.721 8.46698C8.623 8.26898 8.475 8.11998 8.279 7.97198C8.07851 7.85961 7.863 7.77644 7.639 7.72498C7.393 7.67498 7.148 7.67498 6.852 7.67498H4V10.891L7.049 10.89ZM7.197 16.728C7.492 16.728 7.787 16.678 8.033 16.629C8.279 16.579 8.525 16.481 8.721 16.332C8.92138 16.1872 9.08903 16.0018 9.213 15.788C9.311 15.541 9.41 15.244 9.41 14.898C9.41 14.205 9.213 13.71 8.82 13.364C8.426 13.067 7.885 12.919 7.246 12.919H4V16.729L7.197 16.728ZM16.689 16.678C17.082 17.074 17.672 17.272 18.459 17.272C19 17.272 19.492 17.124 19.885 16.877C20.279 16.58 20.525 16.283 20.623 15.986H23.033C22.639 17.173 22.049 18.014 21.263 18.558C20.475 19.053 19.541 19.35 18.41 19.35C17.6864 19.3522 16.9688 19.2179 16.295 18.954C15.6887 18.7266 15.148 18.3528 14.721 17.866C14.2643 17.4106 13.9267 16.8497 13.738 16.233C13.492 15.59 13.393 14.898 13.393 14.106C13.393 13.364 13.492 12.672 13.738 12.028C13.9748 11.408 14.3251 10.8376 14.771 10.346C15.213 9.90098 15.754 9.50598 16.344 9.25798C17.0007 8.99404 17.7022 8.85957 18.41 8.86198C19.246 8.86198 19.984 9.01098 20.623 9.35698C21.263 9.70298 21.754 10.099 22.147 10.693C22.541 11.237 22.837 11.88 23.033 12.573C23.131 13.265 23.18 13.958 23.131 14.749H16C16 15.541 16.295 16.283 16.689 16.679M19.787 11.485C19.443 11.139 18.902 10.941 18.262 10.941C17.8867 10.9353 17.5156 11.0201 17.18 11.188C16.885 11.337 16.689 11.535 16.492 11.733C16.311 11.9242 16.1912 12.1652 16.148 12.425C16.098 12.673 16.049 12.87 16.049 13.068H20.475C20.377 12.326 20.131 11.832 19.787 11.485ZM15.459 6.28998H20.967V7.62598H15.46L15.459 6.28998Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </li>
-            <li>
-                <a class="hover:bg-slate-200 px-2.5 py-1.5 rounded" href="https://github.com/ffarras">Github</a>
+            <li class="flex group">
+                <a class="p-1" href="https://github.com/ffarras"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32" viewBox="0 0 24 24" fill="none">
+                        <path class="fill-slate-500 group-hover:fill-slate-900"
+                            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C1.99977 14.0992 2.65958 16.1454 3.88679 17.8484C5.114 19.5515 6.84631 20.8249 8.83798 21.488C9.33798 21.575 9.52598 21.275 9.52598 21.012C9.52598 20.775 9.51298 19.988 9.51298 19.15C7.00098 19.613 6.35098 18.538 6.15098 17.975C6.03798 17.687 5.55098 16.8 5.12598 16.562C4.77598 16.375 4.27598 15.912 5.11298 15.9C5.90098 15.887 6.46298 16.625 6.65098 16.925C7.55098 18.437 8.98798 18.012 9.56298 17.75C9.65098 17.1 9.91298 16.663 10.201 16.413C7.97598 16.163 5.65098 15.3 5.65098 11.475C5.65098 10.387 6.03798 9.488 6.67598 8.788C6.57598 8.538 6.22598 7.513 6.77598 6.138C6.77598 6.138 7.61298 5.875 9.52598 7.162C10.3401 6.9364 11.1812 6.82302 12.026 6.825C12.876 6.825 13.726 6.937 14.526 7.162C16.439 5.862 17.276 6.138 17.276 6.138C17.826 7.513 17.476 8.538 17.376 8.788C18.013 9.488 18.401 10.375 18.401 11.475C18.401 15.313 16.064 16.163 13.839 16.413C14.201 16.725 14.514 17.325 14.514 18.263C14.514 19.6 14.501 20.675 14.501 21.013C14.501 21.275 14.689 21.587 15.189 21.487C17.1738 20.8166 18.8985 19.5408 20.1203 17.8389C21.3421 16.1371 21.9995 14.095 22 12C22 6.475 17.525 2 12 2"
+                            fill="black" />
+                    </svg></a>
             </li>
         </ul>
         <h4 class="text-3xl font-semibold py-8 text-slate-900">Selected Works</h4>
         <section class="grid lg:grid-cols-2 gap-10">
-            <a href="https://www.behance.net/gallery/179713663/Flux-Energy-Energy-Management-App" target="_blank">
+            <a href="https://www.behance.net/gallery/179713663/Flux-Energy-Energy-Management-App" target="_blank"
+                class="group">
                 <div class="flex flex-col">
                     <img src="https://mir-s3-cdn-cf.behance.net/projects/808/4eef5e179713663.Y3JvcCwxMjEyLDk0OCwwLDA.png"
                         alt="Flux Energy Thumbnail" class="rounded-3xl">
-                    <span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Insightful energy control and
+                    <span
+                        class="text-2xl text-slate-900 font-medium py-4 pb-1.5 group-hover:underline group-hover:underline-offset-8">Insightful
+                        energy control and
                         management</span>
                     <span class="text-lg font-medium">Flux Energy</span>
                     <span class="text-slate-700">UI Design</span>
                 </div>
             </a>
-            <a href="https://www.behance.net/gallery/176841373/UIUX-Design-Showcase-at-BeomhoTS" target="_blank">
+            <a href="https://www.behance.net/gallery/176841373/UIUX-Design-Showcase-at-BeomhoTS" target="_blank"
+                class="group">
                 <div class="flex flex-col"><img src="./resources/beomho-thumb.webp" alt="BeomhoTS Thumbnail"
-                        class="rounded-3xl"><span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Real-time
+                        class="rounded-3xl"><span
+                        class="text-2xl text-slate-900 font-medium py-4 pb-1.5 group-hover:underline group-hover:underline-offset-8">Real-time
                         environment
                         monitoring system</span>
                     <span class="text-lg font-medium">Works at BeomhoTS</span>
@@ -89,18 +123,22 @@
                 </div>
             </a>
             <a href="https://www.behance.net/gallery/176842603/Mamikos-Mobile-App-Revamp-(UX-Case-Study)"
-                target="_blank">
+                target="_blank" class="group">
                 <div class="flex flex-col"><img src="./resources/mamikos-thumb.webp" alt="Mamikos Thumbnail"
                         class="rounded-3xl">
-                    <span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Improve finding kost experience</span>
+                    <span
+                        class="text-2xl text-slate-900 font-medium py-4 pb-1.5 group-hover:underline group-hover:underline-offset-8">Improve
+                        finding kost experience</span>
                     <span class="text-lg font-medium">Mamikos App</span>
                     <span class="text-slate-700">UI/UX Design</span>
                 </div>
             </a>
             <a href="https://www.behance.net/gallery/176843099/Waste4Change-Website-Redesign-(UX-Case-Study)"
-                target="_blank">
+                target="_blank" class="group">
                 <div class="flex flex-col"><img src="./resources/w4c-thumb.webp" alt="Waste4Change Thumbnail"
-                        class="rounded-3xl"><span class="text-2xl text-slate-900 font-medium py-4 pb-1.5">Encourage user
+                        class="rounded-3xl"><span
+                        class="text-2xl text-slate-900 font-medium py-4 pb-1.5 group-hover:underline group-hover:underline-offset-8">Encourage
+                        user
                         interest
                         in waste recycling</span>
                     <span class="text-lg font-medium">Waste4Change Website</span>
@@ -110,8 +148,26 @@
         </section>
     </main>
 
-    <footer class="flex justify-center py-8 xs:py-4">
-        <span class="text-slate-600">v 0.1. made with tailwind in 2024.</span>
+    <footer class="flex flex-col items-center px-4 py-8 xs:py-4 bg-slate-100 mt-8 gap-4">
+        <ul class="flex flex-row xs:gap-0.5 gap-1 md:gap-2 text-slate-600">
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline"
+                    href="mailto:ffarras00@gmail.com">Email</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline"
+                    href="https://linkedin.com/in/mfaishalf">Linkedin</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline"
+                    href="https://behance.net/mfaishalf">Behance</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline-offset-4 underline"
+                    href="https://github.com/ffarras">Github</a>
+            </li>
+        </ul>
+        <span class="text-slate-400 text-center text-pretty">version one. made with love (and tailwind) in 2024.</span>
     </footer>
 </body>
 
