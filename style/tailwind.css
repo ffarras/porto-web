@@ -600,6 +600,18 @@
       text-underline-offset: 8px;
     }
   }
+  .marker\:text-slate-400 ::marker {
+    color: var(--color-slate-400);
+  }
+  .marker\:text-slate-400::marker {
+    color: var(--color-slate-400);
+  }
+  .marker\:text-slate-400 ::-webkit-details-marker {
+    color: var(--color-slate-400);
+  }
+  .marker\:text-slate-400::-webkit-details-marker {
+    color: var(--color-slate-400);
+  }
   .first\:pt-0:first-child {
     padding-top: 0px;
   }
