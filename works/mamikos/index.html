@@ -1,0 +1,694 @@
+<html>
+
+<head>
+    <title>Mamikos Mobile App Revamp (Case Study) - Faishal Farras</title>
+    <meta name="description"
+        content="UI/UX case study: revamping the Mamikos mobile app from the tenant perspective, from user research and usability testing to prototype and iteration.">
+
+    <meta property="og:url" content="https://mfaishalf.com/works/mamikos">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mamikos Mobile App Revamp (Case Study) - Faishal Farras">
+    <meta property="og:description"
+        content="UI/UX case study: revamping the Mamikos mobile app from the tenant perspective, from user research and usability testing to prototype and iteration.">
+    <meta property="og:image" content="https://mfaishalf.com/resources/OG-Image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="mfaishalf.com">
+    <meta property="twitter:url" content="https://mfaishalf.com/works/mamikos">
+    <meta name="twitter:title" content="Mamikos Mobile App Revamp (Case Study) - Faishal Farras">
+    <meta name="twitter:description"
+        content="UI/UX case study: revamping the Mamikos mobile app from the tenant perspective, from user research and usability testing to prototype and iteration.">
+    <meta name="twitter:image" content="https://mfaishalf.com/resources/OG-Image.png">
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../resources/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../style/tailwind.css" rel="stylesheet">
+    <link href="../../style/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="012f7dfe-f1fb-4119-9e3e-c40cc86e60bc"></script>
+</head>
+
+<body class="font-sans bg-white">
+    <header
+        class="flex flex-col gap-3 lg:flex-row justify-between p-4 sm:py-6 md:px-24 lg:px-36 xl:px-48 2xl:px-56 align-center flex-wrap border-b border-slate-200">
+        <a href="/">
+            <div class="flex gap-4 items-center justify-center">
+                <h1 class="text-2xl font-semibold">Faishal Farras</h1>
+                <h2 class="text-md text-slate-600">UI/UX Engineer</h2>
+            </div>
+        </a>
+        <nav class="flex align-center justify-center w-full lg:w-fit">
+            <ul class="flex flex-row gap-1 sm:gap-5 xl:gap-7 items-end sm:items-center font-medium text-slate-600">
+                <li class="">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded bg-slate-200 align-center flex justify-center"
+                        href="/works">Works</a>
+                </li>
+                <li class="">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
+                        href="/about">About</a>
+                </li>
+                <li class="hidden sm:flex">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
+                        href="https://letterboxd.com/mfaishalf/tag/review-faishal/reviews/" target="_blank">Movie
+                        Reviews</a>
+                </li>
+                <li class="sm:hidden">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
+                        href="https://letterboxd.com/mfaishalf/tag/review-faishal/reviews/" target="_blank">
+                        Reviews</a>
+                </li>
+                <li class="">
+                    <a class="flex px-2.5 py-1.5 hover:text-slate-900 rounded align-center flex justify-center"
+                        href="https://mfaishalf.com/resume" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-20 pt-16 pb-28 px-8 md:px-24 md:pt-6 lg:px-36 xl:px-48 2xl:px-56">
+        <a href="/works"
+            class="inline-flex md:mt-8 text-slate-600 hover:text-slate-900 underline underline-offset-4">&larr;
+            Works</a>
+
+        <!-- Intro -->
+        <h1 class="text-5xl font-semibold pt-6 pb-2 lg:pt-8 text-slate-900 text-balance leading-tight">Mamikos</h1>
+        <p class="text-2xl font-medium text-slate-600 pb-10">Mobile App Revamp (Case Study)</p>
+        <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border mb-10">
+            <img src="../../resources/mamikos-thumb.webp" loading="eager" width="1920" height="1080"
+                alt="Mamikos mobile app screens showing the home page, booking detail, and profile menu"
+                class="rounded-xl w-full h-auto">
+        </div>
+        <section class="pb-16 border-b border-slate-200">
+            <dl class="flex flex-col pb-0">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Client</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Independent undergraduate thesis project, not
+                        affiliated with Mamikos.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Period</dt>
+                    <dd class="text-base text-slate-700 text-pretty">August 2021 &ndash; April 2022</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">About</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Mamikos is the most popular boarding house
+                        (<em>kost</em>) marketplace app in Indonesia. Mamikos helps tenants select and book their
+                        preferred kost more quickly and affordably. However, some users have encountered difficulties
+                        while using the app.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Role</dt>
+                    <dd class="text-base text-slate-700 text-pretty">UI/UX Designer</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Responsibility</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Responsible for all design process, from user
+                        research, problem definition, interface revamp, prototyping, and usability testing.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Tools and Technology</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Figma, Recorder, Google Meet, Google Forms, Google
+                        Docs</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Prototype</dt>
+                    <dd class="text-base text-slate-700 text-pretty"><a
+                            class="underline underline-offset-4 hover:text-slate-900" target="_blank" rel="noopener"
+                            href="https://www.figma.com/proto/m4elf44PonfYNQmI3V0cGQ/Mamikos-Porto?node-id=1%3A4099&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A4099&amp;show-proto-sidebar=1">Try
+                            the Figma prototype</a></dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Overview -->
+        <section class="pt-16 pb-16 border-b border-slate-200">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Overview</h4>
+            <dl class="flex flex-col pb-0">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Project Background</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Despite its large user base, Mamikos has received
+                        reviews from frustrated users. The success of Mamikos as a kost search application may also be
+                        threatened by the emergence of competitor applications. Thus, usability evaluation is conducted
+                        to improve user satisfaction and identify usability issues.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Problem Statement</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Multiple users on Google Play Store are complaining
+                        about several problems in Mamikos, such as confusing app navigation, inability to find kost that
+                        meet their preferences, and difficulty finding critical information.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Scope</dt>
+                    <dd class="text-base text-slate-700 text-pretty">This project&rsquo;s scope is to revamp Mamikos
+                        mobile app from the tenant/occupant perspective.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Research -->
+        <section class="pt-16 pb-16 border-b border-slate-200">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Research</h4>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Survey Questionnaire</h5>
+            <dl class="flex flex-col pb-10">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Respondent Detail</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>50 participants</li>
+                            <li>20 &ndash; 30 years old</li>
+                            <li>College students and employee</li>
+                            <li>Mamikos users and non-users</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Question Topic</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>User Profile</li>
+                            <li>Alternatives for kost searching solutions</li>
+                            <li>Motives and expectations for a kost searching app</li>
+                            <li>Motivations for using Mamikos for kost searching</li>
+                            <li>Favorites, pain points, and expectations for Mamikos</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Insights</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">26%</p>
+                                <p class="text-base text-slate-600 pt-1">use Mamikos because of its popularity</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">16%</p>
+                                <p class="text-base text-slate-600 pt-1">use Mamikos because it connects user to tenants
+                                </p>
+                            </div>
+                        </div>
+                        <p class="font-semibold text-slate-900 pt-6 pb-2">User motives for using a kost searching app
+                        </p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Numerous kost options available for comparison</li>
+                            <li>Reduce the need for in-person, direct survey</li>
+                            <li>Able to discover kost in new or unfamiliar areas</li>
+                            <li>Save time, money, and effort.</li>
+                        </ul>
+                    </dd>
+                </div>
+            </dl>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Testing Mamikos App</h5>
+            <dl class="flex flex-col pb-0">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Participant Criteria</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>5 college students, 5 employees</li>
+                            <li>20 &ndash; 30 years old</li>
+                            <li>Kost seekers using Mamikos users or similar app</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Tasks</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="flex flex-col gap-1.5">
+                            <li><span class="text-slate-500">Task 1</span> &nbsp;Search for kost</li>
+                            <li><span class="text-slate-500">Task 2</span> &nbsp;Search for kost and filter by criterias
+                            </li>
+                            <li><span class="text-slate-500">Task 3</span> &nbsp;Search for kost using map feature</li>
+                            <li><span class="text-slate-500">Task 4</span> &nbsp;View recently viewed kost menu</li>
+                            <li><span class="text-slate-500">Task 5</span> &nbsp;Contact kost owners</li>
+                            <li><span class="text-slate-500">Task 6</span> &nbsp;View favorited kost</li>
+                            <li><span class="text-slate-500">Task 7</span> &nbsp;Book a kost</li>
+                            <li><span class="text-slate-500">Task 8</span> &nbsp;View booked kost menu</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Satisfaction Score</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <div>
+                            <p class="text-3xl font-semibold text-slate-900">56.5<span
+                                    class="text-base font-medium text-slate-600">/100 (D)</span></p>
+                            <p class="text-base text-slate-600 pt-1">Using System Usability Scale</p>
+                        </div>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Success Rate</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">60%</p>
+                                <p class="text-base text-slate-600 pt-1">Task 3</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">75%</p>
+                                <p class="text-base text-slate-600 pt-1">Task 4</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">90&ndash;100%</p>
+                                <p class="text-base text-slate-600 pt-1">Other tasks</p>
+                            </div>
+                        </div>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Average Success Rate</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <div>
+                            <p class="text-3xl font-semibold text-slate-900">88.75%</p>
+                            <p class="text-base text-slate-600 pt-1">8 tasks</p>
+                        </div>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Define -->
+        <section class="pt-16 pb-16 border-b border-slate-200">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Define</h4>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Existing App Analysis</h5>
+            <dl class="flex flex-col pb-10">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Pain Points</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Search</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Search location suggestions don't match the users surrounding area</li>
+                            <li>Search with map is hard to locate and confused with 'Search Nearby' button</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Map Markers</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Lack of explanations for the map&rsquo;s markers, makes it hard to use</li>
+                            <li>Map&rsquo;s markers position changes every time the screen is swiped</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Kost Browsing History</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Hard to find kost browsing history menu, user confused with similar menu</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Chat with Tenants</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Users have to choose a template before using chat feature, with no user custom text</li>
+                            <li>Users can't use chat template multiple times in the roomchat</li>
+                            <li>Users want to know when tenants were last active on the app</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Kost Details</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Difficult to differentiate full booked kost or kost that can't be booked</li>
+                            <li>No explanation about Kos Andalan, Kos Higienis, etc.</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Gain Points</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Users can contact the owner through the app</li>
+                            <li>All information on kost detail, facilities, and cost is readily accessible</li>
+                            <li>Users can filter kost by cost, facilities, and many more</li>
+                        </ul>
+                    </dd>
+                </div>
+            </dl>
+            <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                <img src="../../resources/mamikos/existing-app-analysis.webp" loading="lazy" width="1920" height="1080"
+                    alt="Existing app analysis diagram. Pain points are grouped by Search, Map Markers, Kost Browsing History, Chat with Tenants, and Kost Details. Gain points are listed below them."
+                    class="rounded-xl w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Ideate -->
+        <section class="pt-16 pb-16 border-b border-slate-200">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Ideate</h4>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">How Might We &amp; Solution Ideas</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Search</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Enable users to select area more
+                            accurately</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Make search suggestions correspond to user location/area</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Make map search flow easier to
+                            access</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Add map button in search</li>
+                            <li>Adjust &lsquo;Search Nearby&rsquo; button copy</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Map Markers</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Make map markers easier to use and
+                            understand</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Add new section with legend for markers</li>
+                            <li>Add a button to change markers position based on movement to certain area</li>
+                            <li>Ensure markers stay in place when the screen is swiped</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Kost Browsing History</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Allow users to see kost browsing
+                            history easily and directly</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Adjust kost browsing history flow</li>
+                            <li>Change &lsquo;Riwayat Kos&rsquo; menu copy</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Chat with Tenants</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Improve chat feature to be more
+                            intuitive and flexible</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Redesign chat template flow to go directly to the roomchat</li>
+                            <li>Include chat template options to the roomchat</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Inform users about tenant&rsquo;s
+                            app status</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Display tenant&rsquo;s last online status</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Kost Details</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Show a clear distinction for
+                            unbookable kosts</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Highlight unbookable kost with tooltip</li>
+                        </ul>
+                        <p class="font-semibold text-slate-900 pt-4 first:pt-0 pb-2">Inform users about Mamikos kost
+                            segmentations</p>
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Add a section with information about Mamikos kost categories</li>
+                        </ul>
+                    </dd>
+                </div>
+            </dl>
+            <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border mb-12">
+                <img src="../../resources/mamikos/how-might-we.webp" loading="lazy" width="1920" height="1080"
+                    alt="How might we and solution ideas"
+                    class="rounded-xl w-full h-auto">
+            </div>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Prioritization Matrix</h5>
+            <p class="text-base text-slate-700 text-pretty pb-6">The solution ideas are ranked by impact and effort to
+                decide what to design first.</p>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">High impact, low effort</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Add a button to change markers position based on movement to certain area</li>
+                            <li>Ensure markers stay in place when the screen is swiped</li>
+                            <li>Redesign chat template flow to go directly to the roomchat</li>
+                            <li>Include chat template options to the roomchat</li>
+                            <li>Add new section with legend for markers</li>
+                            <li>Adjust kost browsing history flow</li>
+                            <li>Change &lsquo;Riwayat Kos&rsquo; menu copy</li>
+                            <li>Add map button in search</li>
+                            <li>Adjust &lsquo;Search Nearby&rsquo; button copy</li>
+                            <li>Make search suggestions correspond to user location/area</li>
+                            <li>Display tenant&rsquo;s last online status</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Lower impact</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Add a section with information about Mamikos kost categories</li>
+                            <li>Highlight unbookable kost with tooltip</li>
+                        </ul>
+                    </dd>
+                </div>
+            </dl>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Search User Flow</h5>
+            <p class="text-base text-slate-700 text-pretty pb-8">Users can now search directly with the map, and will be
+                redirected to the search results. In the new flow, users input the search query on the map page. The
+                results are displayed on the map, and users then select a kost to open its details.</p>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Kost Browsing History User Flow</h5>
+            <p class="text-base text-slate-700 text-pretty pb-6">In accordance with user habits, users can now easily
+                find kost browsing history page from the &lsquo;Profil&rsquo; menu. In the new flow, users go to the
+                &lsquo;Profil&rsquo; menu and click the &lsquo;Pernah Dilihat&rsquo; menu. The existing path through the
+                &lsquo;Favorit&rsquo; menu stays available.</p>
+            <div class="pb-12">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/flow-kost-history.webp" loading="lazy" width="1920" height="1080"
+                        alt="Kost browsing history user flow. In the new flow, users go from Home to the Profil menu and click Pernah Dilihat. The existing path through the Favorit menu also leads to the Pernah Dilihat tab."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Chat User Flow</h5>
+            <p class="text-base text-slate-700 text-pretty pb-6">Users can now chat with tenants directly and customize
+                their chat templates on roomchat. Before, users chose a chat template and clicked &lsquo;Kirim&rsquo;
+                before they reached the roomchat. After, users go to the roomchat right after they click the
+                &lsquo;Tanya Pemilik Kos&rsquo; button. There, they choose a chat template or write a new message, then
+                send it.</p>
+            <div class="">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/flow-chat.webp" loading="lazy" width="1920" height="1080"
+                        alt="Chat user flow before and after. Before: Kost details, Tanya Pemilik Kos button, choose chat template, click Kirim, redirected to roomchat, messages sent. After: Kost details, Tanya Pemilik Kos button, redirected to roomchat, then choose a chat template or write a new message, send messages, messages sent."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Prototype -->
+        <section class="pt-16 pb-16 border-b border-slate-200">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Prototype</h4>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Style Guide</h5>
+            <p class="text-base text-slate-700 text-pretty pb-6">All colors, typography, icons, and components come from
+                the current Mamikos app, so the revamped experience stays as close as possible to the original. The
+                improvements focus on the user experience: component placement, user flows, and the addition of new
+                elements, among others.</p>
+            <div class="pb-12">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/style-guide.webp" loading="lazy" width="1920" height="1080"
+                        alt="Style guide with colors (Green Logo #27AB27, Green Primary #1BAB56, Green Secondary #6ED69B, Red Chat #E04205, Orange Warning #F39C12, Blue #0074DB, Black Text #2F2D38, White BG #FAFAFA), Lato typography, icons, navigation, buttons, and components."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Search Page</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Add map button in search</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Makes the flow simpler for users who want to search
+                        for kost using the map immediately.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Adjust &lsquo;Search Nearby&rsquo; button copy
+                    </dt>
+                    <dd class="text-base text-slate-700 text-pretty">Further differentiates the functions of Search
+                        Nearby and the map button. The new copy clarifies that the button directs users to a list of
+                        nearby kosts.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Make search suggestions correspond to user
+                        location/area</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Ensures that the displayed area suggestions match
+                        the user&rsquo;s region, which prevents users from clicking on other regions.</dd>
+                </div>
+            </dl>
+            <div class="pb-12">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/search-page.webp" loading="lazy" width="1920" height="1080"
+                        alt="Search page before and after. A map button is added to the search bar, the Search Nearby button copy is adjusted, and search suggestions match the user location and area."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Map Page</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Add a button to change markers position based on
+                        movement to certain area</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Users can use the button to display new markers in
+                        a different area if the search results in a certain area are not satisfactory.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Add new section with legend for markers</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Users can access the information button to get
+                        details on marker colors and texts, which avoids confusion while using the map.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Ensure markers stay in place when the screen is
+                        swiped</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Map markers stay in place while users swipe the
+                        screen, which allows users to search for kost in existing markers.</dd>
+                </div>
+            </dl>
+            <div class="pb-12">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/map-page.webp" loading="lazy" width="1920" height="1080"
+                        alt="Map page before and after. A button changes marker positions based on movement to a certain area, a legend explains the markers, and markers stay in place when the screen is swiped."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Roomchat Page</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Display tenant&rsquo;s last online status</dt>
+                    <dd class="text-base text-slate-700 text-pretty">The online status of a tenant can greatly influence
+                        kost booking decisions. It allows users to make informed choices about whether to proceed with
+                        booking or not.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Include chat template options to the roomchat
+                    </dt>
+                    <dd class="text-base text-slate-700 text-pretty">Users can now enter the roomchat directly and
+                        either create new messages or choose chat templates, according to their convenience.</dd>
+                </div>
+            </dl>
+            <div class="pb-12">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/roomchat-page.webp" loading="lazy" width="1920" height="1080"
+                        alt="Roomchat page before and after. The tenant last online status is displayed, and chat template options are included in the roomchat."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Profile Menu Page</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Adjust kost browsing history flow</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Based on user habits, users can see their kost
+                        browsing history from the &lsquo;Profil&rsquo; page with the addition of the &lsquo;Pernah
+                        Dilihat&rsquo; menu.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Change &lsquo;Riwayat Kos&rsquo; menu copy</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Eliminates user confusion that mistakes this menu
+                        for kost browsing history. Adding &lsquo;Sewa&rsquo; to make &lsquo;Riwayat Sewa Kos&rsquo;
+                        emphasizes its function to display kost renting history.</dd>
+                </div>
+            </dl>
+            <div class="">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/profile-menu-page.webp" loading="lazy" width="1920" height="1080"
+                        alt="Profile menu page before and after. A Pernah Dilihat menu is added for kost browsing history, and the Riwayat Kos menu is renamed Riwayat Sewa Kos."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testing -->
+        <section class="pt-16 pb-16 border-b border-slate-200">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Testing</h4>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Testing Mamikos Prototype</h5>
+            <dl class="flex flex-col pb-0">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Participant &amp; Task</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Identical participants and tasks were employed in
+                        both the existing app and prototype testing to compare their usability.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Findings</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <ul class="list-disc pl-6 flex flex-col gap-1.5">
+                            <li>Chat templates are not easily readable, users have to swipe the screen repeatedly to
+                                view all the templates.</li>
+                            <li>Users should be able to locate nearby kosts based on a particular location without
+                                having to specify the location name manually.</li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Satisfaction Score</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">80.25<span
+                                        class="text-base font-medium text-slate-600">/100 (B)</span></p>
+                                <p class="text-base text-slate-600 pt-1">Prototype score</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">56.5 (D)</p>
+                                <p class="text-base text-slate-600 pt-1">Existing app score</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 pt-3">Using System Usability Scale</p>
+                    </dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Average Success Rate</dt>
+                    <dd class="text-base text-slate-700 text-pretty">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">100%</p>
+                                <p class="text-base text-slate-600 pt-1">Prototype score</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-900">88.75%</p>
+                                <p class="text-base text-slate-600 pt-1">Existing app score</p>
+                            </div>
+                        </div>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Iteration -->
+        <section class="pt-16">
+            <h4 class="text-3xl font-semibold text-slate-900 pb-8">Iteration</h4>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Map Page</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Show nearby kosts in map</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Gives users the option to search for kosts close to
+                        their area and around it.</dd>
+                </div>
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200 border-t">
+                    <dt class="text-base font-semibold text-slate-900">Search with map pinpoint</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Users can now search for kost in a specific area by
+                        pinpointing the desired location on the map directly, which provides a new searching option.
+                    </dd>
+                </div>
+            </dl>
+            <h5 class="text-xl font-semibold text-slate-900 pb-2">Roomchat Page</h5>
+            <dl class="flex flex-col pb-8">
+                <div class="grid md:grid-cols-[14rem_1fr] gap-x-10 gap-y-2 py-5 border-slate-200">
+                    <dt class="text-base font-semibold text-slate-900">Redesigned chat template section</dt>
+                    <dd class="text-base text-slate-700 text-pretty">Improves user readability by fully displaying all
+                        questions and shortening some of them. Users can expand or collapse the section based on their
+                        need.</dd>
+                </div>
+            </dl>
+            <div class="pb-12">
+                <div class="flex bg-white p-3 md:p-4 rounded-3xl border-slate-300 border">
+                    <img src="../../resources/mamikos/iteration.webp" loading="lazy" width="1920" height="1080"
+                        alt="Improved roomchat page with a redesigned, collapsible chat template section that shows all quick questions."
+                        class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="flex flex-col md:px-24 lg:px-36 xl:px-48 2xl:px-56 lg:flex-row lg:justify-between items-center px-4 sm:py-7 py-4 gap-4 border-t border-slate-200">
+        <ul class="flex flex-row gap-0.5 md:gap-2 text-slate-600">
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline underline-offset-4"
+                    href="mailto:ffarras00@gmail.com">Email</a>
+            </li>
+            <li>
+                <a class="hover:text-slate-900 px-2.5 py-1.5 rounded underline underline-offset-4"
+                    href="https://linkedin.com/in/mfaishalf" target="_blank">Linkedin</a>
+            </li>
+        </ul>
+        <span class="text-slate-400 text-center text-pretty lg:order-first">version one. made with love (and
+            tailwind).</span>
+    </footer>
+</body>
+
+</html>
