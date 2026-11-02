@@ -719,9 +719,6 @@
     .lg\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
-    .lg\:p-3 {
-      padding: calc(var(--spacing) * 3);
-    }
     .lg\:p-6 {
       padding: calc(var(--spacing) * 6);
     }
