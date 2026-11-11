@@ -207,6 +207,9 @@
     white-space: nowrap;
     border-width: 0;
   }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
